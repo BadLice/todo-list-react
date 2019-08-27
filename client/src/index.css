@@ -1,0 +1,71 @@
+@import url('w3.css');
+
+*{
+	outline:none;
+}
+
+th {
+	-webkit-touch-callout: none;
+	 -webkit-user-select: none;
+		-khtml-user-select: none;
+			-moz-user-select: none;
+			 -ms-user-select: none;
+					 user-select: none;
+}
+
+.item-name {
+	border:none;
+}
+
+.item-name:focus {
+	border:1px solid #ccc;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    position: relative;
+    padding: 5px 10px;
+		text-align: center !important;
+}
+
+tr.strikeout td:not(.action-col):before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+tr.strikeout td:not(.action-col) {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+th {
+	text-align: center !important;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.hidden-opacity {
+	opacity:0;
+	transition: opacity 1s;
+
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.overlay {
+	z-index: 10;
+	position: fixed;
+}
